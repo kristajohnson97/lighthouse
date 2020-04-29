@@ -1162,7 +1162,7 @@ describe('Config', () => {
       const extendedConfig = new Config(extended);
 
       // When gatherers have instance properties that are bind()'d, they'll not match.
-      // We'll still continue to diff the constructor via .implementation
+      // Gatherers in each config will still be compared via the constructor on .implementation.
       // https://github.com/GoogleChrome/lighthouse/pull/10090#discussion_r382864319
       function deleteInstancesForTest(config) {
         for (const pass of config.passes) {

@@ -105,13 +105,13 @@ const UIStrings = {
   'not automatically checked by Lighthouse. They do not affect your score but it\'s important that you verify them manually.',
   /** Title of the Best Practices category of audits. This is displayed at the top of a list of audits focused on topics related to following web development best practices and accepted guidelines. Also used as a label of a score gauge; try to limit to 20 characters. */
   bestPracticesCategoryTitle: 'Best Practices',
-  /** Title of the Trust & Safety group of the Best Practices category. Within this section are the audits related to trust and safety. */
-  bestPracticesSafetyGroupTitle: 'Trust & Safety',
-  /** Title of the User Experience group of the Best Practices category. Within this section are the audits related to trust and safety. */
+  /** Title of the Trust & Safety group of audits. This is displayed at the top of a list of audits focused on maintaining user trust and protecting security in web development. */
+  bestPracticesSafetyGroupTitle: 'Trust and Safety',
+  /** Title of the User Experience group of the Best Practices category. Within this section are the audits related to the end user's experience of the webpage. */
   bestPracticesUXGroupTitle: 'User Experience',
-  /** Title of the Browser Compatibility group of the Best Practices category. Within this section are the audits related to trust and safety. */
+  /** Title of the Browser Compatibility group of the Best Practices category. Within this section are the audits related to whether the page is interpreted consistently by browsers. */
   bestPracticesBrowserGroupTitle: 'Browser Compatibility',
-  /** Title of the General group of the Best Practices category. Within this section are the audits that don't belong to a specific group. */
+  /** Title of the General group of the Best Practices category. Within this section are the audits that don't belong to a specific group but are of general interest. */
   bestPracticesGeneralGroupTitle: 'General',
   /** Title of the Fast and Reliable section of the web app category. Within this section are audits that check if the web site loaded quickly and can reliably load even if the internet connection is very slow or goes offline. */
   pwaFastReliableGroupTitle: 'Fast and reliable',
