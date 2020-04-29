@@ -106,11 +106,11 @@ const UIStrings = {
   /** Title of the Best Practices category of audits. This is displayed at the top of a list of audits focused on topics related to following web development best practices and accepted guidelines. Also used as a label of a score gauge; try to limit to 20 characters. */
   bestPracticesCategoryTitle: 'Best Practices',
   /** Title of the Trust & Safety group of audits. This is displayed at the top of a list of audits focused on maintaining user trust and protecting security in web development. */
-  bestPracticesSafetyGroupTitle: 'Trust and Safety',
+  bestPracticesTrustSafetyGroupTitle: 'Trust and Safety',
   /** Title of the User Experience group of the Best Practices category. Within this section are the audits related to the end user's experience of the webpage. */
   bestPracticesUXGroupTitle: 'User Experience',
   /** Title of the Browser Compatibility group of the Best Practices category. Within this section are the audits related to whether the page is interpreted consistently by browsers. */
-  bestPracticesBrowserGroupTitle: 'Browser Compatibility',
+  bestPracticesBrowserCompatGroupTitle: 'Browser Compatibility',
   /** Title of the General group of the Best Practices category. Within this section are the audits that don't belong to a specific group but are of general interest. */
   bestPracticesGeneralGroupTitle: 'General',
   /** Title of the Fast and Reliable section of the web app category. Within this section are audits that check if the web site loaded quickly and can reliably load even if the internet connection is very slow or goes offline. */
@@ -392,14 +392,14 @@ const defaultConfig = {
       title: str_(UIStrings.seoCrawlingGroupTitle),
       description: str_(UIStrings.seoCrawlingGroupDescription),
     },
-    'best-practices-safety': {
-      title: str_(UIStrings.bestPracticesSafetyGroupTitle),
+    'best-practices-trust-safety': {
+      title: str_(UIStrings.bestPracticesTrustSafetyGroupTitle),
     },
     'best-practices-ux': {
       title: str_(UIStrings.bestPracticesUXGroupTitle),
     },
-    'best-practices-browser': {
-      title: str_(UIStrings.bestPracticesBrowserGroupTitle),
+    'best-practices-browser-compat': {
+      title: str_(UIStrings.bestPracticesBrowserCompatGroupTitle),
     },
     'best-practices-general': {
       title: str_(UIStrings.bestPracticesGeneralGroupTitle),
@@ -529,18 +529,18 @@ const defaultConfig = {
       title: str_(UIStrings.bestPracticesCategoryTitle),
       auditRefs: [
         // Trust & Safety
-        {id: 'is-on-https', weight: 1, group: 'best-practices-safety'},
-        {id: 'external-anchors-use-rel-noopener', weight: 1, group: 'best-practices-safety'},
-        {id: 'geolocation-on-start', weight: 1, group: 'best-practices-safety'},
-        {id: 'notification-on-start', weight: 1, group: 'best-practices-safety'},
-        {id: 'no-vulnerable-libraries', weight: 1, group: 'best-practices-safety'},
+        {id: 'is-on-https', weight: 1, group: 'best-practices-trust-safety'},
+        {id: 'external-anchors-use-rel-noopener', weight: 1, group: 'best-practices-trust-safety'},
+        {id: 'geolocation-on-start', weight: 1, group: 'best-practices-trust-safety'},
+        {id: 'notification-on-start', weight: 1, group: 'best-practices-trust-safety'},
+        {id: 'no-vulnerable-libraries', weight: 1, group: 'best-practices-trust-safety'},
         // User Experience
         {id: 'password-inputs-can-be-pasted-into', weight: 1, group: 'best-practices-ux'},
         {id: 'image-aspect-ratio', weight: 1, group: 'best-practices-ux'},
         {id: 'image-size-responsive', weight: 1, group: 'best-practices-ux'},
         // Browser Compatibility
-        {id: 'doctype', weight: 1, group: 'best-practices-browser'},
-        {id: 'charset', weight: 1, group: 'best-practices-browser'},
+        {id: 'doctype', weight: 1, group: 'best-practices-browser-compat'},
+        {id: 'charset', weight: 1, group: 'best-practices-browser-compat'},
         // General Group
         {id: 'appcache-manifest', weight: 1, group: 'best-practices-general'},
         {id: 'js-libraries', weight: 0, group: 'best-practices-general'},

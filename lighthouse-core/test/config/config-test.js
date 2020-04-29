@@ -1175,7 +1175,7 @@ describe('Config', () => {
       deleteInstancesForTest(config);
 
       assert.equal(config.passes.length, 1, 'did not filter config');
-      expect(config).toMatchObject(extendedConfig, 'had mutations');
+      expect(config).toEqual(extendedConfig, 'had mutations');
     });
 
     it('should filter out other passes if passed Performance', () => {
